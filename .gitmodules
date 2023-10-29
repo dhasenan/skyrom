@@ -1,0 +1,6 @@
+[submodule "src/esper"]
+	path = src/esper
+	url = https://github.com/benmoran56/esper.git
+[submodule "esper"]
+	path = src/esper
+	url = https://github.com/benmoran56/esper.git

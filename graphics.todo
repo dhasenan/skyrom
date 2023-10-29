@@ -1,0 +1,22 @@
+Inspiration: Ultima 3
+
+Tiles are going to be 8 pixels. We draw a bezel around the display for UI features. Going to use the mouse primarily, I think.
+
+[-] Pick a color palette
+  [x] default palette
+  [ ] option to replace with other classic palettes
+[x] Pick a standard tile / sprite size
+[x] Draw something on the screen
+[ ] Draw an actual tileset
+  [ ] and something on top
+[ ] First pass tiles
+  [ ] block colors are fine to start!
+  [ ] normal wilderness
+  [ ] snowy
+  [ ] town
+[ ] First pass sprites
+  [ ] player character
+  [ ] humanoids
+  [ ] common wild animals
+  [ ] dragons
+[ ] Later pass: fonts

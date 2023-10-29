@@ -1,0 +1,21 @@
+[x] build / run cycle
+  trivially easy, might want a makefile for vim reasons
+
+[ ] enough art to at least get a demo
+  [ ] make art easier somehow
+[ ] input handling
+[ ] menus
+[ ] save / load
+  [ ] Linux
+  [ ] wasm
+  [ ] other platforms
+[ ] tiled
+[ ] test map
+[ ] cutscenes
+[ ] map transitions
+[ ] web target
+  [ ] get it working
+  [ ] edit / run loop
+
+
+
