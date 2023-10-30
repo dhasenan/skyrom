@@ -49,6 +49,8 @@ class App:
         pyxel.load("../res/game.pyxres")
         self.mode = MapMode(0)
         self.mode_stack = [self.mode]
+        self.popup_message = ""
+        self.popup_timeout = 0
         pyxel.run(self.update, self.draw)
 
     def push_mode(self, mode):
@@ -61,11 +63,20 @@ class App:
         self.mode_stack = self.mode_stack[:-1]
         self.mode = self.mode_stack[-1]
 
+    def show_popup(self, message, timeout = 10):
+        self.popup_message = message
+        self.popup_timeout = timeout
+
     def update(self):
         self.mode.update(self)
 
     def draw(self):
         self.mode.draw()
+        if self.popup_timeout > 0:
+            self.popup_timeout -= 1
+            pyxel.rect(10, 10, pyxel.width - 20, 10, 2)
+            pyxel.rect(11, 11, pyxel.width - 22, 8, 0)
+            pyxel.text(12, 12, self.popup_message, 15)
 
 App()
 

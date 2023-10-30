@@ -83,5 +83,6 @@ class MenuMode:
 def pause_menu():
     return MenuMode("Main Menu", [
         Button("Quit", lambda app: pyxel.quit()),
+        Button("Save", lambda app: app.show_popup("Game saved!")),
         Button("Continue", lambda app: app.pop_mode()),
     ])
