@@ -20,9 +20,12 @@ class Color:
 class Style:
     color: Color = field(default_factory = Color)
     border_color: Color = field(default_factory = Color)
-    width: int = 80
+    width: int = 60
+    height: int = 50
+    x: int = 60
+    y: int = 20
     button_height: int = 10
-    button_width: int = 70
+    button_width: int = 56
     margin: int = 2
     border_size: int = 1
     selected_border_size: int = 1
@@ -50,10 +53,10 @@ class MenuMode:
             self.buttons[self.selected].action(app)
 
     def draw(self):
-        pyxel.cls(self.style.color.bg)
-        pyxel.text(self.style.margin, self.style.margin, self.title, self.style.color.fg)
-        top_margin = 10
-        left = (self.style.width - self.style.button_width) // 2
+        pyxel.rect(self.style.x, self.style.y, self.style.width, self.style.height, self.style.color.bg)
+        pyxel.text(self.style.margin + self.style.x, self.style.margin + self.style.y, self.title, self.style.color.fg)
+        top_margin = self.style.y + 10
+        left = (self.style.width - self.style.button_width) // 2 + self.style.x
         button_width = self.style.width - 2 * self.style.margin
         layout_height = self.style.button_height + self.style.margin
         text_offset = (self.style.button_height - 5) // 2
@@ -86,3 +89,5 @@ def pause_menu():
         Button("Save", lambda app: app.show_popup("Game saved!")),
         Button("Continue", lambda app: app.pop_mode()),
     ])
+
+

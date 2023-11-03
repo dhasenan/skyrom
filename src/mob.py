@@ -1,11 +1,5 @@
 from dataclasses import dataclass as component
 
-class Facing:
-    UP = 0
-    RIGHT = 1
-    DOWN = 2
-    LEFT = 3
-
 @component
 class Inventory:
     items: list[int] = field(default_factory=list)
@@ -15,7 +9,6 @@ class Inventory:
 class Pos:
     x: float = 0.0
     y: float = 0.0
-    facing: int = Facing.DOWN
 
 @component
 class Equipment:

@@ -71,7 +71,8 @@ class App:
         self.mode.update(self)
 
     def draw(self):
-        self.mode.draw()
+        for mode in self.mode_stack:
+            mode.draw()
         if self.popup_timeout > 0:
             self.popup_timeout -= 1
             pyxel.rect(10, 10, pyxel.width - 20, 10, 2)
