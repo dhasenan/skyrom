@@ -1,16 +1,16 @@
 [x] build / run cycle
   trivially easy, might want a makefile for vim reasons
 
-[ ] enough art to at least get a demo
-  [ ] make art easier somehow
-[ ] input handling
-[ ] menus
+[x] enough art to at least get a demo
+[x] input handling
+[x] menus
+[ ] interacting with stuff on the screen
+  [ ] demo: loot chest
 [ ] save / load
   [ ] Linux
   [ ] wasm
   [ ] other platforms
-[ ] tiled
-[ ] test map
+[x] test map
 [ ] cutscenes
 [ ] map transitions
 [ ] web target

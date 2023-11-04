@@ -1,14 +1,15 @@
 from dataclasses import dataclass as component
+from map import Pos
+
+@component
+class Status:
+    sneaking: bool
+    poisoned: bool
 
 @component
 class Inventory:
     items: list[int] = field(default_factory=list)
     cash: int = 0
-
-@component
-class Pos:
-    x: float = 0.0
-    y: float = 0.0
 
 @component
 class Equipment:
@@ -21,7 +22,7 @@ class Equipment:
     ring: int = 0
     amulet: int = 0
 
-class ItemKind:
+class ItemKind(Enum):
     ARMOR = 1
     MISC = 2
     WEAPON = 3
@@ -36,9 +37,18 @@ class Item:
     value: int = 0
     kind = ItemKind.MISC
 
+class Slot(Enum):
+    HEAD = 1
+    TORSO = 2
+    HANDS = 3
+    FEET = 4
+    NECK = 5
+    RING = 6
+
 @component
 class Armor:
     value: int = 1
+    slot: Slot = Slot.HEAD
 
 @component
 class Weapon:

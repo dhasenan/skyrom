@@ -17,6 +17,29 @@
 # - caucasian
 
 
+# Super Cassette Vision:
+#000000 	#ff0000 	#ffa100 	#ffa09f
+#ffff00 	#a3a000 	#00a100 	#00ff00
+#a0ff9d 	#00009b 	#0000ff 	#a200ff
+#ff00ff 	#00ffff 	#a2a19f 	#ffffff
+
+# Intellivision:
+# 000000
+# blue: 002dff
+# orange: ff3e00
+# light yellow: c9d464
+# "brown" (green 1): 3c5800
+# green 2: 00780f
+# green 3: 00a720
+# green 4: 6ccd30
+# "white": fffcff
+# gray: a7a8a8
+# light blue: 5acbff
+# mustard: ffa600
+# pink / red: ff3276
+# lilac: bd95ff
+# mauve: c81a7d
+
 STANDARD = [
     0x0,
     0x2B335F,

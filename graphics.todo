@@ -7,15 +7,15 @@ Tiles are going to be 8 pixels. We draw a bezel around the display for UI featur
   [ ] option to replace with other classic palettes
 [x] Pick a standard tile / sprite size
 [x] Draw something on the screen
-[ ] Draw an actual tileset
-  [ ] and something on top
+[x] Draw an actual tileset
+  [x] and something on top
 [ ] First pass tiles
   [ ] block colors are fine to start!
-  [ ] normal wilderness
+  [-] normal wilderness
   [ ] snowy
   [ ] town
 [ ] First pass sprites
-  [ ] player character
+  [x] player character
   [ ] humanoids
   [ ] common wild animals
   [ ] dragons
